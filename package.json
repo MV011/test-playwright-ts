@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "test": "npx bddgen && npx playwright test",
+    "test:tag": "ts-node run-tag.ts",
     "test:ui": "npx bddgen --tags \"@UI\" && npx playwright test --project=ui",
     "test:api": "npx bddgen --tags \"@API\" && npx playwright test --project=api",
     "report": "npx http-server ./cucumber-report -c-1 -a localhost -o index.html",
@@ -19,6 +20,7 @@
     "playwright-bdd": "^8.2.0",
     "prettier": "3.4.2",
     "prettier-plugin-gherkin": "^3.1.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },
   "license": "MIT"
